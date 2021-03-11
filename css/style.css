@@ -25,6 +25,12 @@ nav ul a, nav .brand-logo {
   @media only screen and (max-width : 992px) {
     
   }
+  @media only screen and (min-width : 600px){
+    .footer-right{
+        right: 0;
+        position: absolute;
+    }
+  }
   
   @media only screen and (max-width : 600px) {
     #maintxt{
@@ -46,6 +52,10 @@ nav ul a, nav .brand-logo {
 footer .col a{
     color: black;
 }
+footer .col .footer-link a{
+    color: darkred;
+}
+
 .labeltxt{
     font-size: 20px;
 }
