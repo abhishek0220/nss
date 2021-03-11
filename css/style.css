@@ -1,3 +1,51 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 nav ul a, nav .brand-logo {
     color: rgb(27, 27, 27);
+}
+#maintxt{
+    font-size: 45px;
+}
+#subText{
+    font-size: 25px;
+}
+.parallax-container {
+  color: rgba(255,255,255,.9);
+}
+#index-banner .section {
+  top: 0;
+}
+.horizontalLine{
+    width: 30%;
+}
+.h-right{
+    margin-left: 70%;
+}
+  @media only screen and (max-width : 992px) {
+    
+  }
+  
+  @media only screen and (max-width : 600px) {
+    #maintxt{
+        font-size: 40px;
+    }
+    #subText{
+        font-size: 18px;
+    }
+    .logo{
+        display: none;
+    }
+    .horizontalLine{
+        width: 70%;
+    }
+    .h-right{
+        margin-left: 30%;
+    }
+  }
+footer .col a{
+    color: black;
+}
+.labeltxt{
+    font-size: 20px;
 }
