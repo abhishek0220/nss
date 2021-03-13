@@ -11,6 +11,9 @@ input:focus, textarea:focus {
 nav ul a, nav .brand-logo {
     color: rgb(27, 27, 27);
 }
+#contact{
+    padding: 50px 100px;
+}
 #maintxt{
     font-size: 45px;
 }
@@ -30,7 +33,9 @@ nav ul a, nav .brand-logo {
     margin-left: 70%;
 }
   @media only screen and (max-width : 992px) {
-
+    #contact{
+        padding: 50px 50px;
+    }
   }
   @media only screen and (min-width : 600px){
     .footer-right{
@@ -42,6 +47,9 @@ nav ul a, nav .brand-logo {
   @media only screen and (max-width : 600px) {
     #maintxt{
         font-size: 40px;
+    }
+    #contact{
+        padding: 50px 20px;
     }
     #subText{
         font-size: 18px;
