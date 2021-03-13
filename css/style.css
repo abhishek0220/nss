@@ -1,6 +1,13 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+input:focus, textarea:focus {
+    border-bottom: 1px solid rgb(27, 27, 27) !important;
+    box-shadow: 0 1px 0 0 rgb(27, 27, 27) !important;
+  }
+  label.active, textarea.active {
+    color: rgb(27, 27, 27) !important;
+  }
 nav ul a, nav .brand-logo {
     color: rgb(27, 27, 27);
 }
