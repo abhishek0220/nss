@@ -32,6 +32,9 @@ nav ul a, nav .brand-logo {
 .h-right{
     margin-left: 70%;
 }
+.list-square li{
+    list-style-type: square !important;
+}
   @media only screen and (max-width : 992px) {
     #contact{
         padding: 50px 50px;
