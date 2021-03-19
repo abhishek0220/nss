@@ -35,6 +35,9 @@ nav ul a, nav .brand-logo {
 .list-square li{
     list-style-type: square !important;
 }
+.smallText{
+    font-size: 22px;
+}
   @media only screen and (max-width : 992px) {
     #contact{
         padding: 50px 50px;
@@ -57,6 +60,9 @@ nav ul a, nav .brand-logo {
     #subText{
         font-size: 18px;
     }
+    .smallText{
+        font-size: 18px;
+    }
     .logo{
         display: none;
     }
@@ -65,6 +71,12 @@ nav ul a, nav .brand-logo {
     }
     .h-right{
         margin-left: 30%;
+    }
+    .card .card-title{
+        font-size: 18px;
+    }
+    .card p{
+        font-size: 10px !important;
     }
   }
 footer .col a{
