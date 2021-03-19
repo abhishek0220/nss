@@ -20,12 +20,12 @@ nav ul a, nav .brand-logo {
 #subText{
     font-size: 25px;
 }
-.parallax-container {
-  color: rgba(255,255,255,.9);
-}
 #index-banner .section {
   top: 0;
 }
+.slides li img {
+    background-attachment: fixed;
+  }
 .horizontalLine{
     width: 30%;
 }

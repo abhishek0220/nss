@@ -46,12 +46,12 @@
     </ul>
 
     <!--Page Specific Content Start-->
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot valign-wrapper" style="height: 100%; background-color: rgba(0, 0, 0, 0.65);">
+    <div id="index-banner" style="position: relative;">
+        <div class="section no-pad-bot valign-wrapper" style="height: 100%; width: 100%; position: absolute; z-index: 5; background-color: rgba(0, 0, 0, 0.65);">
             <div class="container">
                 <h1 class="center white-text text-accent-3" id="maintxt">NSS IIT Jammu</h1>
                 <div class="row center">
-                    <h5 class="col s12 light" id="subText">NSS is the student body of IIT Jammu that upholds humanity and works for its betterment via social activities</h5>
+                    <h5 class="col s12 light white-text" id="subText">NSS is the student body of IIT Jammu that upholds humanity and works for its betterment via social activities</h5>
                 </div>
                 <div class="mouse_scroll">
                     <div class="mouse">
@@ -65,10 +65,18 @@
                 </div>
             </div>
         </div>
-        <div class="parallax">
-            <img src="./assets/cover_image.jpg">
-        </div>
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="https://pbs.twimg.com/media/EeUU684VAAEHyvf?format=jpg&name=large"> <!-- random image -->
+              </li>
+              <li>
+                <img src="https://pbs.twimg.com/media/EeUU686VoAAfFYC?format=jpg&name=large"> <!-- random image -->
+              </li>
+            </ul>
+          </div>
     </div>
+
     <div class="container">
         <div class="section">
             <a class="anchor" id="about"></a>
@@ -141,5 +149,17 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
     <script src="js/init.js"></script>
+
+
+    <!--Page Specific start-->
+    <script>
+        $(document).ready(function(){
+    $('.slider').slider({
+        indicators: false,
+        height: 550
+    });
+  });
+    </script>
+    <!--Page Specific end-->
 </body>
 </html>
