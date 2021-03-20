@@ -11,6 +11,9 @@ input:focus, textarea:focus {
 nav ul a, nav .brand-logo {
     color: rgb(27, 27, 27);
 }
+#team .col{
+  padding: 0 40px;
+}
 #contact{
     padding: 50px 100px;
 }
@@ -20,11 +23,11 @@ nav ul a, nav .brand-logo {
 #subText{
     font-size: 25px;
 }
-.parallax-container {
-  color: rgba(255,255,255,.9);
-}
 #index-banner .section {
   top: 0;
+}
+.slides li img {
+  background-attachment: fixed;
 }
 .horizontalLine{
     width: 30%;
@@ -35,9 +38,15 @@ nav ul a, nav .brand-logo {
 .list-square li{
     list-style-type: square !important;
 }
+.smallText{
+  font-size: 22px;
+}
   @media only screen and (max-width : 992px) {
     #contact{
         padding: 50px 50px;
+    }
+    #team .col{
+      padding: 0 30px;
     }
   }
   @media only screen and (min-width : 600px){
@@ -54,8 +63,17 @@ nav ul a, nav .brand-logo {
     #contact{
         padding: 50px 20px;
     }
+    #team .col{
+      padding: 0 10px;
+    }
+    #team p{
+      display: none;
+    }
     #subText{
         font-size: 18px;
+    }
+    .smallText{
+      font-size: 18px;
     }
     .logo{
         display: none;
@@ -65,6 +83,12 @@ nav ul a, nav .brand-logo {
     }
     .h-right{
         margin-left: 30%;
+    }
+    .card .card-title{
+      font-size: 18px;
+    }
+    .card p{
+        font-size: 10px !important;
     }
   }
 footer .col a{
