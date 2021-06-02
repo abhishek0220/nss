@@ -17,16 +17,16 @@
         </div>
     </div>
     <div class="container team admins" style="margin-top: 70px;">
-        <h5 style="text-align: center;">Admins</h5>
+        <h5 style="text-align: center;">Student Coordinators</h5>
         <div class="row">
-            <div class="col s12 m3 l3" *ngFor="let person of admins">
-                <div class="single-person">
+            <div class="col s12 m4 l3" *ngFor="let person of students">
+                <div style="cursor:pointer" class="single-person" (click)="goto(person['link'])">
                     <div class="person-image">
                         <img src="{{person['img']}}" alt="">
                     </div>
                     <div class="person-info">
                         <h3 class="full-name">{{person['name']}}</h3>
-                        <span class="speciality">NSS Admin</span>
+                        <span class="speciality">{{person['role']}}</span>
                     </div>
                 </div>
             </div>

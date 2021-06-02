@@ -11,6 +11,13 @@ export class TeamComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  async goto(link : string){
+    console.log(link)
+    if(link != ''){
+      window.open(link, '_blank')
+    }
+  }
   coord_team = [
     {
       'name': 'Suchismita Roy',
@@ -32,25 +39,77 @@ export class TeamComponent implements OnInit {
     }
   ]
 
-  admins = [
+  students = [
     {
-      'name': 'Naveen',
+      'name': 'Shubham',
       'img': './assets/team/students/default.png',
+      'role': 'NSS Admin & Group Head',
       'link': ''
     },
     {
-      'name': 'Abhishek',
-      'img': './assets/team/students/abhishek.jpeg',
+      'name': 'Naveen',
+      'img': './assets/team/students/default.png',
+      'role': 'NSS Admin',
       'link': ''
     },
     {
       'name': 'Agrima',
       'img': './assets/team/students/Agrima.jpg',
+      'role': 'NSS Admin & Group Head',
       'link': ''
+    },
+    {
+      'name': 'Shantanu',
+      'img': './assets/team/students/default.png',
+      'role': 'NSS Admin',
+      'link': ''
+    },
+    {
+      'name': 'Venkatesh',
+      'img': './assets/team/students/default.png',
+      'role': 'NSS Admin',
+      'link': ''
+    },
+    {
+      'name': 'Abhishek',
+      'img': './assets/team/students/abhishek.jpg',
+      'role': 'NSS Admin & Web Developer',
+      'link': 'https://iamabhishek.live/'
     },
     {
       'name': 'Deepansh',
       'img': './assets/team/students/default.png',
+      'role': 'NSS Admin',
+      'link': ''
+    },
+    {
+      'name': 'Mansi',
+      'img': './assets/team/students/default.png',
+      'role': 'NSS Admin',
+      'link': ''
+    },
+    {
+      'name': 'Amay',
+      'img': './assets/team/students/default.png',
+      'role': 'NSS Admin',
+      'link': ''
+    },
+    {
+      'name': 'Tejaswi',
+      'img': './assets/team/students/default.png',
+      'role': 'NSS Admin',
+      'link': ''
+    },
+    {
+      'name': 'Mukund',
+      'img': './assets/team/students/default.png',
+      'role': 'NSS Admin',
+      'link': ''
+    },
+    {
+      'name': 'Haritika',
+      'img': './assets/team/students/haritika.jpg',
+      'role': 'Web Developer',
       'link': ''
     }
   ]
