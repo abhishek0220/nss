@@ -1,0 +1,74 @@
+<div id="index-banner" style="position: relative;">
+    <div class="section no-pad-bot valign-wrapper" style="height: 100%; width: 100%; position: absolute; z-index: 5; background-color: rgba(0, 0, 0, 0.65);">
+        <div class="container">
+            <h1 class="center white-text text-accent-3" id="maintxt">NSS IIT Jammu</h1>
+            <div class="row center">
+                <h5 class="col s12 light white-text" id="subText">NSS is the student body of IIT Jammu that upholds humanity and works for its betterment via social activities</h5>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="https://pbs.twimg.com/media/EeUU684VAAEHyvf?format=jpg&name=large"> <!-- random image -->
+            </li>
+            <li>
+                <img src="./assets/cloth_donation_drive.jpg"> <!-- random image -->
+            </li>
+            <li>
+                <img src="https://pbs.twimg.com/media/EeUU686VoAAfFYC?format=jpg&name=large"> <!-- random image -->
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="section">
+        <a class="anchor" id="about"></a>
+        <div class="row" style="margin-top: 50px; margin-bottom: 20px;">
+            <div class="col s12">
+                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h1 style="font-size: 2rem;">“Be the change you wish to see in the world” </h1>
+                <div class="pink accent-3 horizontalLine" style="height: 3px;">
+                </div>
+                <p class="light smallText" style="text-align: justify;line-height: 1.2;">
+                    For some, IIT itself, is their world. However, there is a lot more to
+                    explore outside the classroom and the campus. The NSS Cell at IIT
+                    Jammu is trying to provide students with opportunities to explore the
+                    world they may not know exists. The NSS program aims to not only
+                    familiarize students with different communities and groups around
+                    them but also let them explore nature through treks and camps.
+                    Students can volunteer to teach kids how to play the Guitar or teach
+                    WhatsApp video calling to the elderly.
+                </p>
+                <div class="pink accent-3 horizontalLine h-right" style="height: 3px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="background-color: #e6e6e6; padding-top: 50px; padding-bottom: 50px;">
+    <div class="col m6 s10 offset-s1 offset-m3">
+        <div class="carousel carousel-slider">
+            <div class="carousel-item card" *ngFor="let item of carousel">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="{{item['img']}}">
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">{{item['name']}}<i class="material-icons right">close</i></span>
+                    <p style="text-align: justify;">
+                        {{item['desc']}}
+                    </p>
+                    <p class="blue-text">
+                        {{item['tags']}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p class="center-align">Click on Image to know More</p>
+    </div>
+</div>
+
+
+<div style="width: 100%; height: 300px;">
+    Some Content To be added
+</div>

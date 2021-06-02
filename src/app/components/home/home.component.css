@@ -1,0 +1,11 @@
+.smallText{
+    font-size: 22px;
+}
+.slides li img {
+    background-attachment: fixed;
+  }
+@media only screen and (max-width : 600px) {
+    .smallText{
+        font-size: 18px;
+    }
+}

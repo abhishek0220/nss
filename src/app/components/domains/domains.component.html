@@ -1,0 +1,16 @@
+<div style="padding:50px;">
+    <h4 style="margin-bottom: 30px; text-align: center;">Domains | NSS</h4>
+    <div class="row">
+        <div class="col s4" *ngFor="let item of domains; let i = index">
+            <div class="card" (click)="openDialog(i)">
+                <div class="card-image">
+                    <div style="position: relative;">
+                        <div style="height: 100%; width: 100%; position: absolute; z-index: 10; background-color: rgba(0, 0, 0, 0.418);"></div>
+                        <img src="{{item['cover']}}">
+                    </div>
+                    <span class="card-title" style="z-index: 100;">{{item['name']}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

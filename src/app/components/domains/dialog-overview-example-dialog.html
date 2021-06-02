@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>
+  {{data['name']}}
+</h1>
+<mat-tab-group>
+  <mat-tab label="{{item['name']}}" *ngFor="let item of data['section']">
+    <p style="font-size: 16px;">{{item['desc']}}</p>
+    <div>
+      <ul *ngIf="item['social']">
+        <a *ngIf="item['social']['fb']" href="{{item['social']['fb']}}"  target="_blank" ><i class="fa fa-facebook" aria-hidden="true" style="font-size: 30px;"></i></a>
+        <a *ngIf="item['social']['insta']" href="{{item['social']['insta']}}" target="_blank" ><i class="fa fa-instagram" aria-hidden="true" style="font-size: 30px; margin-left: 15px;"></i></a>
+        <a *ngIf="item['social']['twitter']" href="{{item['social']['twitter']}}" target="_blank" ><i class="fa fa-twitter" aria-hidden="true" style="font-size: 30px; margin-left: 15px;"></i></a>
+        <a *ngIf="item['social']['wordpress']" href="{{item['social']['wordpress']}}" target="_blank"><i class="fa fa-wordpress" aria-hidden="true" style="font-size: 30px; margin-left: 15px; margin-right: 10px;"></i></a>
+      </ul>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+<div mat-dialog-actions class="right">
+  <a class="btn-small blue" (click)="onNoClick()">back</a>
+</div>

@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.horizontalLine{
+    width: 30%;
+}
+.h-right{
+    margin-left: 70%;
+}
+@media only screen and (max-width : 600px){
+    .horizontalLine{
+        width: 70%;
+    }
+    .h-right{
+        margin-left: 30%;
+    }
+}
